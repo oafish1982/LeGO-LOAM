@@ -714,7 +714,7 @@ public:
             // pcl::toROSMsg(*cloudKeyPoses3D, poseMsg);
             poseMsg.header.stamp = ros::Time().fromSec(timeLaserOdometry);
             // poseMsg.header.frame_id = "/camera_init";
-            poseMsg.header.frame_id = "/map";
+            poseMsg.header.frame_id = "map";
             int numPoses = cloudKeyPoses6D->points.size();
             // geometry_msgs::Quaternion geoQuat = tf::createQuaternionMsgFromRollPitchYaw
             //       (cloudKeyPoses6D->points[numPoses-1].roll, cloudKeyPoses6D->points[numPoses-1].pitch, cloudKeyPoses6D->points[numPoses-1].yaw);
